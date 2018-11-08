@@ -1,5 +1,6 @@
 import csv
 
+
 ##### VARIABLES AND FILE NAMES #####
 
 #File to read
@@ -63,9 +64,7 @@ for row in myFile:
 	newFile.writerow(row)
 
 	
-
 #####CLOSE THE FILES####
-#####After looping though file once, close it and re-open to loop through it again, or use "with" loop.
 
 myCSVFile.close()
 csvFile.close()
