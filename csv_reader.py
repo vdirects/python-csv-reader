@@ -3,10 +3,10 @@ import csv
 
 ##### VARIABLES AND FILE NAMES #####
 
-#File to read
+#DOCUMENT to read
 fileName ='sample.csv'
 
-#File to create
+#DOCUMENT to create
 newFileName = 'newFileName.csv'
 
 #Header for new file
@@ -36,18 +36,18 @@ newFile =csv.writer(csvFile)
 newFile.writerow(header)
 
 
-##### LOOP OVER FILE ####
+##### LOOP OVER DOCUMENT ####
 
-#Optional: skip first line
-firstLine= True
+#Alternative way to skip first line--pt1
+#firstLine= True
 
 #Loop over csv rows
 for row in myFile:
 
-	#Optional: Skip first line
-	if firstLine:
-		firstLine=False
-		continue
+	#Alternative way to skip first line--pt2
+	#if firstLine:
+		#firstLine=False
+		#continue
 
 	## DO STUFF WITH EACH ROW OR VALUE ##
 
@@ -60,11 +60,11 @@ for row in myFile:
 	#append a new value to end of row
 	row.append("MyNewValue")
 
-	#Write entire row to another file
+	#Write entire row to another document
 	newFile.writerow(row)
 
 	
-#####CLOSE THE FILES####
+#####CLOSE THE DOCUMENTS####
 
 myCSVFile.close()
 csvFile.close()
